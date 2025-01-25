@@ -1,16 +1,4 @@
 services:
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    env_file:
-      - ./frontend/.env.production
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
-
   backend:
     build:
       context: ./backend
@@ -21,4 +9,16 @@ services:
       - ./backend/.env
     volumes:
       - ./backend:/app
-      - /app/node_modules
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./frontend/.env.production
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
