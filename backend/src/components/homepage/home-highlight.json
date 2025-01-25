@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_homepage_home_highlights",
+  "info": {
+    "displayName": "homeHighlight",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

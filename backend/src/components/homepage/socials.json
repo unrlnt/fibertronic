@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_socials",
+  "info": {
+    "displayName": "socials",
+    "icon": "discuss"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

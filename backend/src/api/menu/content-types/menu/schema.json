@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "link": {
+      "displayName": "links",
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.links"
+    },
+    "email": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    }
+  }
+}

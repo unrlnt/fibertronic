@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_homepage_teams",
+  "info": {
+    "displayName": "team",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "funktion": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "bild": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

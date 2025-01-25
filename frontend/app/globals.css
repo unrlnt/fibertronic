@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-text)
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--font-headline);
+}
+
+h2{
+  font-size:2rem;
+  font-weight:400;
+  font-family: var(--font-headline);
+}
+
+h3{
+  font-size:1.5rem;
+  font-weight:400;
+  font-family: var(--font-headline);
+}
+
+.teamCardcontent{
+  transform: scale(0);
+}
+
+.teamCard:hover .teamCardcontent{
+  transform: scale(1)
+}
+
+.teamCard:focus .teamCardcontent{
+  transform: scale(1);
+}
+
+.embla {
+  max-width: 100%;
+  width: 90vw;
+  margin: auto;
+  --slide-spacing: 2rem;
+}
+
+#team .embla{
+  --slide-size: 100%;
+  --slide-height: 100%
+}
+
+#leistungen .embla{
+  --slide-size: 100%;
+  --slide-height: 75%
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+.embla__slide__number {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 1.8rem;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+#team .embla__slide__number{
+  width: var(--slide-height);
+  aspect-ratio:1;
+}
+
+#leistungen .embla__slide__number{
+  width: 100%;
+  aspect-ratio: "";
+}
+
+.formfield{
+  width: 100%;
+  padding-left: 1rem;
+  padding-right:1rem;
+  padding-top:0.8rem;
+  padding-bottom:0.8rem;
+  border-radius:9000px
+}
+
+@media screen and (min-width: 640px){
+  #team .embla{
+    --slide-size: 50%
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #team .embla{
+    --slide-size: 33%;
+  }
+}

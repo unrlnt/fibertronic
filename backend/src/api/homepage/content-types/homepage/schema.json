@@ -1,0 +1,123 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroBg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "h1": {
+      "type": "string"
+    },
+    "homeHighlight": {
+      "displayName": "homeHighlight",
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.home-highlight"
+    },
+    "leistung": {
+      "displayName": "leistungen",
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.leistungen"
+    },
+    "headlineSection1": {
+      "type": "string"
+    },
+    "subheadlineSection1": {
+      "type": "string"
+    },
+    "ueberUnsText": {
+      "type": "richtext"
+    },
+    "ueberUnsBild": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "headlineSection2": {
+      "type": "string"
+    },
+    "subheadlineSection2": {
+      "type": "string"
+    },
+    "teammember": {
+      "displayName": "team",
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.team"
+    },
+    "headlineKontakt": {
+      "type": "string"
+    },
+    "subheadlineKontakt": {
+      "type": "string"
+    },
+    "footerBild": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "footerFirmenname": {
+      "type": "string"
+    },
+    "adressestr": {
+      "type": "string"
+    },
+    "adresseort": {
+      "type": "string"
+    },
+    "kontaktmail": {
+      "type": "email"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "network": {
+      "displayName": "socials",
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.socials"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "headlineSection3": {
+      "type": "string"
+    },
+    "subheadlineSection3": {
+      "type": "string"
+    }
+  }
+}

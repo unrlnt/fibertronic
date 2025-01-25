@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "Theme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "black": {
+      "type": "string"
+    },
+    "white": {
+      "type": "string"
+    },
+    "dark": {
+      "type": "string"
+    },
+    "light": {
+      "type": "string"
+    },
+    "accent1": {
+      "type": "string"
+    },
+    "accent2": {
+      "type": "string"
+    }
+  }
+}
