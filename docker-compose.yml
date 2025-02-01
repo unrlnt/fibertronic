@@ -3,22 +3,22 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
     ports:
       - "1337:1337"
     env_file:
       - ./backend/.env
-    volumes:
-      - ./backend:/app
 
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
     ports:
       - "3000:3000"
     env_file:
       - ./frontend/.env.production
-    volumes:
-      - ./frontend:/app
     depends_on:
       - backend
