@@ -14,7 +14,7 @@ export default async function Karriere(){
                     <h1 className="leading-none">Werde {content.jobtitel} bei Fibertronic!</h1>
                 </div>
                 <div className="flex flex-row w-[95vw] md:max-w-[75%] lg:max-w-[50%] min-w-fit gap-0 absolute left-[5vw] bottom-1/2">
-                    {content.wirbieten.map((highlight) => (
+                    {content.highlights.map((highlight) => (
                         <div className="w-1/3 flex bg-space-cadet text-steel-white justify-center items-center">
                             <span className="text-xl">{highlight.text}</span>
                         </div>
@@ -24,7 +24,7 @@ export default async function Karriere(){
             <div id="wir" className="w-[75vw] max-w-screen-lg flex flex-col items-center py-28">
                 <h2>{content.headlineSection1}</h2>
                 <div className="grid gap-y-10 grid-cols-1 md:grid-cols-2">
-                    {content.erwarten.map((erwartung) => (
+                    {content.wirbieten.map((erwartung) => (
                         <div className="flex flex-col gap-2">
                             <h3>{erwartung.titel}</h3>
                             <span className="text-steel-white leading-tight">{erwartung.beschreibung}</span>
@@ -38,7 +38,7 @@ export default async function Karriere(){
             <div id="du" className="w-[75vw] max-w-screen-lg flex flex-col items-center py-28">
                 <h2>{content.headlineSection2}</h2>
                 <div className="grid gap-y-10 grid-cols-1 md:grid-cols-2">
-                    {content.mitbringen.map((erwartung) => (
+                    {content.wirerwarten.map((erwartung) => (
                         <div className="flex flex-col gap-2">
                             <h3>{erwartung.titel}</h3>
                             <span className="text-steel-white leading-tight">{erwartung.beschreibung}</span>
