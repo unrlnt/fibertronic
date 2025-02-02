@@ -8,20 +8,20 @@ export default async function Karriere(){
 
     return (
         <div className="bg-coal-black flex flex-col items-center relative text-steel-white" id="start">
-            <div className="w-full m-0 p-0 min-h-[33%] relative flex flex-col justify-center items-end">
+            <div className="w-full m-0 p-0 min-h-[33vh] relative flex flex-col justify-center items-end">
                 <Image src={`${apiUrl}${content.bild.url}`} width={1000} height={667} alt={`Hintergrundbild ${content.jobtitel}`} className="w-full h-full absolute top-0 left-0 object-cover z-0" />
-                <div className="w-[90vw] md:max-w-[75%] lg:max-w-[505%]">
-                    <h1 className="leading-none">Werde {content.jobtitel} bei Fibertronic!</h1>
+                <div className="w-[90vw] md:max-w-[75%] lg:max-w-[50%] z-10">
+                    <h1 className="leading-none text-steel-white drop-shadow-md">Werde {content.jobtitel} bei Fibertronic!</h1>
                 </div>
-                <div className="flex flex-row w-[95vw] md:max-w-[75%] lg:max-w-[50%] min-w-fit gap-0 absolute left-[5vw] bottom-1/2">
+                <div className="flex flex-row w-[95vw] md:max-w-[75%] lg:max-w-[50%] min-w-fit gap-2 absolute left-[5vw] bottom-0 translate-y-1/2">
                     {content.highlights.map((highlight) => (
-                        <div className="w-1/3 flex bg-space-cadet text-steel-white justify-center items-center">
+                        <div className="w-1/3 flex bg-space-cadet text-steel-white justify-center items-center aspect-video">
                             <span className="text-xl">{highlight.text}</span>
                         </div>
                     ))}
                 </div>
             </div>
-            <div id="wir" className="w-[75vw] max-w-screen-lg flex flex-col items-center py-28">
+            <div id="wir" className="w-[75vw] max-w-screen-lg flex flex-col items-center py-28 gap-14">
                 <h2>{content.headlineSection1}</h2>
                 <div className="grid gap-y-10 grid-cols-1 md:grid-cols-2">
                     {content.wirbieten.map((erwartung) => (
@@ -35,7 +35,7 @@ export default async function Karriere(){
                     Jetzt bewerben!
                 </a>
             </div>
-            <div id="du" className="w-[75vw] max-w-screen-lg flex flex-col items-center py-28">
+            <div id="du" className="w-[75vw] max-w-screen-lg flex flex-col items-center py-28 gap-14">
                 <h2>{content.headlineSection2}</h2>
                 <div className="grid gap-y-10 grid-cols-1 md:grid-cols-2">
                     {content.wirerwarten.map((erwartung) => (
