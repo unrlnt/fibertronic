@@ -20,7 +20,7 @@ export default {
     },
   },
   safelist: [
-    {pattern: /(bg|border|text)-(space-cade|cool-grey|steel-white|coal-black|ebony|ash-grey)/,}
+    {pattern: /(bg|border|text)-(space-cadet|cool-grey|steel-white|coal-black|ebony|ash-grey)/,}
   ],
   plugins: [],
 };
