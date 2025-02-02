@@ -423,6 +423,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
 export interface ApiKarriereKarriere extends Struct.SingleTypeSchema {
   collectionName: 'karrieres';
   info: {
+    description: '';
     displayName: 'karriere';
     pluralName: 'karrieres';
     singularName: 'karriere';
@@ -438,6 +439,8 @@ export interface ApiKarriereKarriere extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    headlineSection1: Schema.Attribute.String;
+    headlineSection2: Schema.Attribute.String;
     highlights: Schema.Attribute.Component<'karriere.highglights', true>;
     jobtitel: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;

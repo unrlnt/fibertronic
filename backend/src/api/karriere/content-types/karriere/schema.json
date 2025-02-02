@@ -4,7 +4,8 @@
   "info": {
     "singularName": "karriere",
     "pluralName": "karrieres",
-    "displayName": "karriere"
+    "displayName": "karriere",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,11 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "bild": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "jobtitel": {
       "type": "string"
@@ -47,6 +49,12 @@
       "type": "component",
       "repeatable": true,
       "component": "karriere.wirerwarten"
+    },
+    "headlineSection1": {
+      "type": "string"
+    },
+    "headlineSection2": {
+      "type": "string"
     }
   }
 }
