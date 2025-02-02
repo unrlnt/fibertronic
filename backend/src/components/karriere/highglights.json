@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_karriere_highglights",
+  "info": {
+    "displayName": "highglights",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

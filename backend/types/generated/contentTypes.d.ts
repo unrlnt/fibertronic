@@ -420,6 +420,41 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiKarriereKarriere extends Struct.SingleTypeSchema {
+  collectionName: 'karrieres';
+  info: {
+    displayName: 'karriere';
+    pluralName: 'karrieres';
+    singularName: 'karriere';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bewerbungsbetreff: Schema.Attribute.String;
+    bewerbungsemailtext: Schema.Attribute.Text;
+    bewerbungsmail: Schema.Attribute.Email;
+    bild: Schema.Attribute.Media<'images'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    highlights: Schema.Attribute.Component<'karriere.highglights', true>;
+    jobtitel: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::karriere.karriere'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    wirbieten: Schema.Attribute.Component<'karriere.wirbieten', true>;
+    wirerwarten: Schema.Attribute.Component<'karriere.wirerwarten', true>;
+  };
+}
+
 export interface ApiMenuMenu extends Struct.SingleTypeSchema {
   collectionName: 'menus';
   info: {
@@ -989,6 +1024,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::karriere.karriere': ApiKarriereKarriere;
       'api::menu.menu': ApiMenuMenu;
       'api::theme.theme': ApiThemeTheme;
       'plugin::content-releases.release': PluginContentReleasesRelease;

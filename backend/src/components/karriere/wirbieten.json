@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_karriere_wirbietens",
+  "info": {
+    "displayName": "wirbieten",
+    "icon": "gift"
+  },
+  "options": {},
+  "attributes": {
+    "titel": {
+      "type": "string"
+    },
+    "beschreibung": {
+      "type": "text"
+    }
+  }
+}

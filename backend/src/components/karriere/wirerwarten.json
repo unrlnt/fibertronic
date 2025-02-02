@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_karriere_wirerwartens",
+  "info": {
+    "displayName": "wirerwarten",
+    "icon": "gate"
+  },
+  "options": {},
+  "attributes": {
+    "titel": {
+      "type": "string"
+    },
+    "beschreibung": {
+      "type": "text"
+    }
+  }
+}

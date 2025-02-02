@@ -51,6 +51,41 @@ export interface HomepageTeam extends Struct.ComponentSchema {
   };
 }
 
+export interface KarriereHighglights extends Struct.ComponentSchema {
+  collectionName: 'components_karriere_highglights';
+  info: {
+    displayName: 'highglights';
+    icon: 'crown';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface KarriereWirbieten extends Struct.ComponentSchema {
+  collectionName: 'components_karriere_wirbietens';
+  info: {
+    displayName: 'wirbieten';
+    icon: 'gift';
+  };
+  attributes: {
+    beschreibung: Schema.Attribute.Text;
+    titel: Schema.Attribute.String;
+  };
+}
+
+export interface KarriereWirerwarten extends Struct.ComponentSchema {
+  collectionName: 'components_karriere_wirerwartens';
+  info: {
+    displayName: 'wirerwarten';
+    icon: 'gate';
+  };
+  attributes: {
+    beschreibung: Schema.Attribute.Text;
+    titel: Schema.Attribute.String;
+  };
+}
+
 export interface MenuLinks extends Struct.ComponentSchema {
   collectionName: 'components_menu_links';
   info: {
@@ -70,6 +105,9 @@ declare module '@strapi/strapi' {
       'homepage.leistungen': HomepageLeistungen;
       'homepage.socials': HomepageSocials;
       'homepage.team': HomepageTeam;
+      'karriere.highglights': KarriereHighglights;
+      'karriere.wirbieten': KarriereWirbieten;
+      'karriere.wirerwarten': KarriereWirerwarten;
       'menu.links': MenuLinks;
     }
   }

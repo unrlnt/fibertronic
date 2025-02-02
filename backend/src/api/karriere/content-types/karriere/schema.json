@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "karrieres",
+  "info": {
+    "singularName": "karriere",
+    "pluralName": "karrieres",
+    "displayName": "karriere"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bild": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "jobtitel": {
+      "type": "string"
+    },
+    "bewerbungsmail": {
+      "type": "email"
+    },
+    "bewerbungsbetreff": {
+      "type": "string"
+    },
+    "bewerbungsemailtext": {
+      "type": "text"
+    },
+    "highlights": {
+      "displayName": "highglights",
+      "type": "component",
+      "repeatable": true,
+      "component": "karriere.highglights"
+    },
+    "wirbieten": {
+      "displayName": "wirbieten",
+      "type": "component",
+      "repeatable": true,
+      "component": "karriere.wirbieten"
+    },
+    "wirerwarten": {
+      "displayName": "wirerwarten",
+      "type": "component",
+      "repeatable": true,
+      "component": "karriere.wirerwarten"
+    }
+  }
+}
