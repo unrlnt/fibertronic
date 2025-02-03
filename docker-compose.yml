@@ -9,6 +9,10 @@ services:
       - "1337:1337"
     env_file:
       - ./backend/.env
+    volumes:
+      - ./app:/srv/app
+      - ./data/uploads:/srv/app/public/uploads
+    command: ["npm","run","start"]
 
   frontend:
     build:
