@@ -27,7 +27,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[95vw] max-w-screen-lg absolute top-[80vh] flex flex-row justify-between self-cemter gap-10 lg:gap-28">
+      <div className="w-[95vw] max-w-screen-lg absolute top-[80vh] flex flex-row justify-between self-center">
         {leistungContent.leistung.map((leistung, index) => (
           <div key={index} className="flex flex-col justify-center items-center rounded-full md:rounded-2xl bg-cool-grey aspect-square w-full max-w-full p-2 md:p-5 border-transparent border-4 hover:border-[#c4cadbcc] transition-all duration-300 hover:shadow-black shadow-md">
             <Image src={`${apiUrl}${leistung.icon.url}`} width={96} height={96} alt={`Icon ${leistung.name}`} />
@@ -35,7 +35,7 @@ export default async function Home() {
           </div>
         ))}
       </div>
-      <div className="w-[75vw] max-w-screen-lg flex flex-col items-center py-28" id="team">
+      <div className="w-[75vw] max-w-screen-lg flex flex-col items-center py-28 md:mt-8" id="team">
           <h2>{content.headlineSection1}</h2>
           <span className="tracking-wider font-thin">{content.subheadlineSection1}</span>
           <div className="grid grid-cols-1 md:grid-cols-2 md:flex-row gap-10 lg:gap-28 mt-10 w-full justify-around items-center">
