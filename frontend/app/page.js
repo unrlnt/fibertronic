@@ -16,7 +16,7 @@ export default async function Home() {
   return (
     <div className="bg-coal-black flex flex-col items-center relative text-steel-white" id="start">
       <div className="flex flex-col justify-center gap-5 bg-coal-black h-screen w-screen m-0 p-0 relative overflow-hidden">
-        <video src={`${apiUrl}${content.heroBg.url}`} className="absolute top-0 left-0 min-w-screen min-h-screen object-cover z-0 opacity-50" type="video/mp4" load="lazy" autoPlay muted loop playsInline />
+        <video src={`${apiUrl}${content.heroBg.url}`} className="absolute top-0 left-0 min-w-screen w-full min-h-screen object-cover z-0 opacity-50" type="video/mp4" load="lazy" autoPlay muted loop playsInline />
         <div className="flex flex-row w-[95vw] max-w-screen-lg self-center md:justify-end">
           <div className="flex flex-col z-10 md:items-end md:text-right text-steel-white w-full md:w-2/3 lg:w-1/2">
             <h1 className="leading-none">{content.h1}</h1>
